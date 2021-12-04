@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Layouting & Linking</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="contact.js"></script>
+</head>
+
+<body>
+  <!-- NavBar -->
+  <nav>
+    <div class="left-side">
+      <a href="index.html">
+        <img src="assets/rose1-logo.png" alt="logo" />
+      </a>
+      <ul>
+        <li>
+          <a href="index.html" class="list-active">Home</a>
+        </li>
+        <li>
+          <a href="blog.html">Blog</a>
+        </li>
+      </ul>
+    </div>
+    <div class="right-side">
+      <a href="contact-form.html">Contact Me</a>
+    </div>
+  </nav>
+
+  <!-- Form Contact -->
+  <div class="form-contact">
+    <div class="container-form">
+      <form>
+        <div>
+          <label for="input-name">Name</label>
+          <input id="input-name" type="text" />
+        </div>
+        <div>
+          <label for="input-email">Email</label>
+          <input id="input-email" type="text" />
+        </div>
+        <div>
+          <label for="input-phone-number">Phone Number</label>
+          <input id="input-phone-number" type="text" />
+        </div>
+        <div>
+          <label for="input-subject">Subject</label>
+          <select id="input-subject" style="font-size: 15px; background: rgb(250, 250, 250);
+          border: 1px solid rgb(220, 220, 220);">
+            <option style="font-size: 15px;" value="let's talk">Let's Talk</option>
+            <option style="font-size: 15px;" value="let's collaboration">Let's Collaboration</option>
+            <option style="font-size: 15px;" value="i'm hiring">I'm Hiring</option>
+            <option style="font-size: 15px;" value="other questions">Other Questions</option>
+          </select>
+        </div>
+        <div>
+          <label for="input-your-message">Your Message</label>
+          <textarea id="input-your-message" style="font-size: 15px;"></textarea>
+        </div>
+        <button onclick="submitForm()">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
